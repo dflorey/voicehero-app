@@ -2983,7 +2983,7 @@ SPDX-License-Identifier: Apache-2.0
       @close=${()=>this.profileOpen=!1}
       @click=${t=>{var e;return t.target===t.currentTarget&&((e=this.profileDialog)==null?void 0:e.close())}}
     >
-      ${this.profileOpen?P`<iframe src=${Bp(zn("profile",this.place,this.root),"embedded")} title=${K().profile} @load=${t=>Kp(t.target)}></iframe>`:$}
+      ${this.profileOpen?P`<iframe src=${Bp(zn("profile",this.place,this.root),"embedded")} title=${K().profile} allow="clipboard-write" @load=${t=>Kp(t.target)}></iframe>`:$}
     </dialog>`}hintBubble(){const t=K();return P`
       <div class="hint" role="status">
         <button class="hint-text" @click=${this.fromHint}>
@@ -3703,7 +3703,7 @@ SPDX-License-Identifier: Apache-2.0
           <span class="m-titles">
             <!-- The app's name as it is, the help's in the theme colour -->
             <span class="m-name">${ut().app.name} <span class="accent">${t}</span></span>
-            ${rm(K().versionTitle("0.1+","32b0aee · 221fac1"))}
+            ${rm(K().versionTitle("0.1+","32b0aee · 358fe89"))}
           </span>
         </a>
         <div class="m-header-end">

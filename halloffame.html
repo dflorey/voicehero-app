@@ -3103,7 +3103,7 @@ SPDX-License-Identifier: Apache-2.0
       @close=${()=>this.profileOpen=!1}
       @click=${t=>{var e;return t.target===t.currentTarget&&((e=this.profileDialog)==null?void 0:e.close())}}
     >
-      ${this.profileOpen?w`<iframe src=${ql(Cn("profile",this.place,this.root),"embedded")} title=${le().profile} @load=${t=>Sv(t.target)}></iframe>`:P}
+      ${this.profileOpen?w`<iframe src=${ql(Cn("profile",this.place,this.root),"embedded")} title=${le().profile} allow="clipboard-write" @load=${t=>Sv(t.target)}></iframe>`:P}
     </dialog>`}hintBubble(){const t=le();return w`
       <div class="hint" role="status">
         <button class="hint-text" @click=${this.fromHint}>
@@ -6566,7 +6566,7 @@ SPDX-License-Identifier: Apache-2.0
           <span class="m-titles">
             <!-- The app's name as it is, "Hall of Fame" in the theme colour (a name, in every language) -->
             <span class="m-name" aria-label=${t.name}>${je().app.name} <span class="c-creator">Hall of Fame</span></span>
-            ${Fv(le().versionTitle("0.1+","32b0aee · 221fac1"))}
+            ${Fv(le().versionTitle("0.1+","32b0aee · 358fe89"))}
           </span>
         </a>
         <div class="m-header-end">
