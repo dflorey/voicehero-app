@@ -3703,7 +3703,7 @@ SPDX-License-Identifier: Apache-2.0
           <span class="m-titles">
             <!-- The app's name as it is, the help's in the theme colour -->
             <span class="m-name">${ut().app.name} <span class="accent">${t}</span></span>
-            ${rm(K().versionTitle("0.1+","32b0aee · 358fe89"))}
+            ${rm(K().versionTitle("0.1+","32b0aee · f428bcb"))}
           </span>
         </a>
         <div class="m-header-end">
